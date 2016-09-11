@@ -43,23 +43,29 @@
 
     MyCell *myCell = (MyCell *) cell;
     
-   //NSURL *imgURL =[self.exhibitions objectAtIndex: indexPath.row] img
-    //NSData *dataForImage = [[NSData alloc] initWithContentsOfURL: [self getURLForFirstWorkInExhibition: ]];
-    NSString *str = [[NSBundle mainBundle] pathForResource: @"tfss-00af4fe9-a76e-4016-a2a5-b1334074b72d-nvas_resize" ofType:@"jpg"];
-    NSURL *imgURL = [[NSURL alloc] initWithString:str];
-    //NSData *dataForImage = [[NSData alloc] initWithContentsOfURL: imgURL];
+    NSURL *imgURL = [self getURLForFirstWorkInExhibition: [self.exhibitions objectAtIndex: indexPath.row]];
     
     NSData *dataForImage = [NSData dataWithContentsOfURL:imgURL];
     
     [myCell.myCellImage setImage:[[UIImage alloc] initWithData: dataForImage]];
 
-    //[myCell.myCellImage setImage:[[UIImage alloc] initWithContentsOfFile:str]];
-    
     [self reloadInputViews];
     
     return myCell;
 }
 
+- (NSURL *) getURLForFirstWorkInExhibition: (Event *) event {
+    NSURL *url = [[NSURL alloc] init];
+    Exhibition *ex = (Exhibition *) event;
+    for (Work *w in ex.works) {
+        if (!(w.imgURL == nil)) {
+            url = w.imgURL;
+            break;
+        }
+    };
+    
+    return url;
+}
 
 /*
 #pragma mark - Navigation

@@ -32,7 +32,7 @@
     if (ne==nil) {
         return nil;
     } else {
-   return [[NSURL alloc] initWithString: [[NSBundle mainBundle] pathForResource:imgName ofType: nil]];
+   return [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource :imgName ofType: nil]];
     }
 }
 
