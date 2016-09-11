@@ -13,9 +13,6 @@
 + (BOOL) isValidStringForURL:(NSObject*)data {
     if ([data isKindOfClass:[NSString class]]) {
         if (![data  isEqual: @""]){
-            if (data == nil) {
-                NSString *a;
-            };
             return YES;
         }
     };
@@ -23,11 +20,8 @@
 }
 
 + (nullable NSURL *) makeURLWithString: (NSString *) imgName {
-    
-    NSLog(imgName);
-    
+
    NSString *ne = [[NSBundle mainBundle] pathForResource:imgName ofType: nil];
-    NSLog(ne);
     
     if (ne==nil) {
         return nil;
