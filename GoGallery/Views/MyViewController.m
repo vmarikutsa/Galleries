@@ -43,13 +43,27 @@
 
     MyCell *myCell = (MyCell *) cell;
     
-    NSURL *imgURL = [self getURLForFirstWorkInExhibition: [self.exhibitions objectAtIndex: indexPath.row]];
+    ///
+    myCell.viewPanel.alpha = 0.6;
+    myCell.viewPanel.backgroundColor = [UIColor blackColor];
+    myCell.gallaryName.textColor = [UIColor whiteColor];
+    myCell.exhibitionName.textColor = [UIColor greenColor];
+    myCell.authorName.textColor = [UIColor greenColor];
+    
+    //
+    
+    Event *currentEvent = [self.exhibitions objectAtIndex: indexPath.row];
+    
+    NSURL *imgURL = [self getURLForFirstWorkInExhibition: currentEvent];
     
     NSData *dataForImage = [NSData dataWithContentsOfURL:imgURL];
     
     [myCell.myCellImage setImage:[[UIImage alloc] initWithData: dataForImage]];
 
-    [self reloadInputViews];
+    myCell.gallaryName.text = currentEvent.venue.name;
+    myCell.exhibitionName.text = currentEvent.name;
+    myCell.authorName.text = ((Exhibition *) currentEvent).authorName;
+    //[self reloadInputViews];
     
     return myCell;
 }

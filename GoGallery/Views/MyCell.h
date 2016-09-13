@@ -10,6 +10,10 @@
 
 @interface MyCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *myCellImage;
+@property (weak, nonatomic) IBOutlet UIView *viewPanel;
+@property (weak, nonatomic) IBOutlet UILabel *gallaryName;
+@property (weak, nonatomic) IBOutlet UILabel *exhibitionName;
+@property (weak, nonatomic) IBOutlet UILabel *authorName;
 
 
 @end
