@@ -44,7 +44,7 @@
     MyCell *myCell = (MyCell *) cell;
     
     ///
-    myCell.viewPanel.alpha = 0.6;
+    myCell.viewPanel.alpha = 0.8;
     myCell.viewPanel.backgroundColor = [UIColor blackColor];
     myCell.gallaryName.textColor = [UIColor whiteColor];
     myCell.exhibitionName.textColor = [UIColor greenColor];
