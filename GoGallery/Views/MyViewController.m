@@ -11,6 +11,7 @@
 #import "Exhibition.h"
 #import "Event.h"
 #import "MyCell.h"
+#import "EventInformationViewController.h"
 //#import "<#header#>"
 
 @interface MyViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -44,6 +45,7 @@
     MyCell *myCell = (MyCell *) cell;
     
     ///
+    myCell.backgroundColor = [UIColor blackColor];
     myCell.viewPanel.alpha = 0.8;
     myCell.viewPanel.backgroundColor = [UIColor blackColor];
     myCell.gallaryName.textColor = [UIColor whiteColor];
@@ -80,6 +82,20 @@
     
     return url;
 }
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Event *currentEvent = [self.exhibitions objectAtIndex: indexPath.row];
+    [self performSegueWithIdentifier:@"showEventInforation" sender:currentEvent];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    EventInformationViewController *vc = segue.destinationViewController;
+    vc.currentEvent = (Exhibition *) sender;
+    
+    //UIStoryboard
+    
+}
+
 
 /*
 #pragma mark - Navigation

@@ -550,7 +550,7 @@
 		411ED77D1D675890008D844E /* DataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 411ED77C1D675890008D844E /* DataLoader.m */; };
 		411ED7801D6758D7008D844E /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 411ED77F1D6758D7008D844E /* Event.m */; };
 		411ED7831D675907008D844E /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 411ED7821D675907008D844E /* Venue.m */; };
-		4168DD521D883F67002F2A88 /* ExhibitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4168DD511D883F67002F2A88 /* ExhibitionView.m */; };
+		4168DD551D8ADE33002F2A88 /* EventInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4168DD541D8ADE33002F2A88 /* EventInformationViewController.m */; };
 		41D227A71D86993C002820E2 /* test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D227A61D86993C002820E2 /* test1.m */; };
 		631111B01D7C2C660049AAD5 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 631111AF1D7C2C660049AAD5 /* Work.m */; };
 		631111B31D7C413A0049AAD5 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 631111B21D7C413A0049AAD5 /* Common.m */; };
@@ -1113,8 +1113,8 @@
 		411ED77F1D6758D7008D844E /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		411ED7811D675907008D844E /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
 		411ED7821D675907008D844E /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
-		4168DD501D883F67002F2A88 /* ExhibitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitionView.h; sourceTree = "<group>"; };
-		4168DD511D883F67002F2A88 /* ExhibitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitionView.m; sourceTree = "<group>"; };
+		4168DD531D8ADE33002F2A88 /* EventInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInformationViewController.h; sourceTree = "<group>"; };
+		4168DD541D8ADE33002F2A88 /* EventInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInformationViewController.m; sourceTree = "<group>"; };
 		41D227A51D86993C002820E2 /* test1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test1.h; sourceTree = "<group>"; };
 		41D227A61D86993C002820E2 /* test1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test1.m; sourceTree = "<group>"; };
 		631111AE1D7C2C660049AAD5 /* Work.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Work.h; sourceTree = "<group>"; };
@@ -1800,8 +1800,8 @@
 				6EC549531D807C9300116AE6 /* MyViewController.m */,
 				6EC549551D807D7B00116AE6 /* MyCell.h */,
 				6EC549561D807D7B00116AE6 /* MyCell.m */,
-				4168DD501D883F67002F2A88 /* ExhibitionView.h */,
-				4168DD511D883F67002F2A88 /* ExhibitionView.m */,
+				4168DD531D8ADE33002F2A88 /* EventInformationViewController.h */,
+				4168DD541D8ADE33002F2A88 /* EventInformationViewController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2411,12 +2411,12 @@
 				631111B01D7C2C660049AAD5 /* Work.m in Sources */,
 				41159BE71D6B76B80000285D /* NSString+DateConvertor.m in Sources */,
 				411ED7801D6758D7008D844E /* Event.m in Sources */,
+				4168DD551D8ADE33002F2A88 /* EventInformationViewController.m in Sources */,
 				41159BEA1D6B7F070000285D /* Gallery.m in Sources */,
 				411ED33F1D6757E7008D844E /* ViewController.m in Sources */,
 				41159BE01D6B73260000285D /* Exhibition.m in Sources */,
 				411ED7831D675907008D844E /* Venue.m in Sources */,
 				411ED33C1D6757E7008D844E /* AppDelegate.m in Sources */,
-				4168DD521D883F67002F2A88 /* ExhibitionView.m in Sources */,
 				41D227A71D86993C002820E2 /* test1.m in Sources */,
 				411ED7791D67584A008D844E /* EventsModel.m in Sources */,
 				411ED3391D6757E7008D844E /* main.m in Sources */,
