@@ -86,6 +86,16 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Event *currentEvent = [self.exhibitions objectAtIndex: indexPath.row];
     [self performSegueWithIdentifier:@"showEventInforation" sender:currentEvent];
+    
+//    UIStoryboard *st = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+//    EventInformationViewController *vc = [st instantiateViewControllerWithIdentifier:@"EventInformationViewController"];
+//    vc.currentEvent = [self.exhibitions objectAtIndex: indexPath.row];
+//    //[self.navigationController pushViewController:vc animated:YES];
+//    [self presentViewController:vc animated:YES completion:^{
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [vc dismissViewControllerAnimated:YES completion:nil];
+//        });
+//    }];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

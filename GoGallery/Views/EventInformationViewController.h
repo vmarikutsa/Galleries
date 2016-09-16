@@ -12,4 +12,9 @@
 
 @interface EventInformationViewController : ViewController
 @property (nonatomic, strong) Event *currentEvent;
+@property (weak, nonatomic) IBOutlet UILabel *nameExhibitionLbl;
+@property (weak, nonatomic) IBOutlet UILabel *nameAuthorLbl;
+@property (weak, nonatomic) IBOutlet UILabel *datesExhibitionLbl;
+
+
 @end
