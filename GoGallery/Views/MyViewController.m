@@ -91,9 +91,6 @@
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     EventInformationViewController *vc = segue.destinationViewController;
     vc.currentEvent = (Exhibition *) sender;
-    
-    //UIStoryboard
-    
 }
 
 
