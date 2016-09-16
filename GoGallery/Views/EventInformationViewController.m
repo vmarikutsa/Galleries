@@ -29,6 +29,12 @@
     [str appendString:@" - "];
     [str appendString:[self.currentExhibition.dateEnd strDate]];
     self.datesExhibitionLbl.text = str;
+    
+    NSData *imageData = [NSData dataWithContentsOfURL:self.currentExhibition.venue.logo];
+    UIImage *logoImage = [[UIImage alloc] initWithData:imageData];
+    [self.galleryLogoImage setImage:logoImage];
+    
+    self.galleryNameLbl.text = self.currentExhibition.venue.name;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -10,5 +10,6 @@
 
 @interface Common : NSObject
 + (BOOL) isValidStringForURL: (NSObject *)data;
-+ (nullable NSURL *) makeURLWithString: (NSString *) imgName;
++ (nullable NSURL *) makeFileURLWithString: (NSString *) imgName;
++ (nullable NSURL *) makeURLWithString: (NSString *) strURL;
 @end

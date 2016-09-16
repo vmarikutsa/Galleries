@@ -20,7 +20,7 @@
         if ([Common isValidStringForURL: data[@"imgPicture"]]) {
             //self.imgURL = [[NSURL alloc] initWithString:data[@"imgPicture"]];
             //self.imgURL = [[NSURL alloc] initWithString: [[NSBundle mainBundle] pathForResource:data[@"imgPicture"] ofType: nil]];
-            self.imgURL = [Common makeURLWithString:data[@"imgPicture"]];
+            self.imgURL = [Common makeFileURLWithString:data[@"imgPicture"]];
         }
     }
     

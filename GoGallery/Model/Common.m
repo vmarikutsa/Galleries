@@ -19,7 +19,7 @@
     return FALSE;
 }
 
-+ (nullable NSURL *) makeURLWithString: (NSString *) imgName {
++ (nullable NSURL *) makeFileURLWithString: (NSString *) imgName {
 
    NSString *ne = [[NSBundle mainBundle] pathForResource:imgName ofType: nil];
     
@@ -28,6 +28,11 @@
     } else {
    return [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource :imgName ofType: nil]];
     }
+}
+
++ (nullable NSURL *) makeURLWithString: (NSString *) strURL {
+    NSURL *newURL = [[NSURL alloc] initWithString:strURL];
+    return newURL;
 }
 
 @end

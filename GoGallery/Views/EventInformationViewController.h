@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameExhibitionLbl;
 @property (weak, nonatomic) IBOutlet UILabel *nameAuthorLbl;
 @property (weak, nonatomic) IBOutlet UILabel *datesExhibitionLbl;
-
+@property (weak, nonatomic) IBOutlet UIImageView *galleryLogoImage;
+@property (weak, nonatomic) IBOutlet UILabel *galleryNameLbl;
 
 @end

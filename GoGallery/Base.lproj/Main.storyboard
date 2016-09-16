@@ -150,7 +150,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXJ-0Z-5Rz">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXJ-0Z-5Rz">
                                 <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcU-oD-4La" userLabel="authorView">
@@ -174,8 +174,8 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="dateExhibition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRh-kN-yhf">
-                                                <rect key="frame" x="30" y="81" width="540" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dateExhibition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRh-kN-yhf">
+                                                <rect key="frame" x="30" y="81" width="540" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="neG-lu-alI"/>
                                                 </constraints>
@@ -198,17 +198,46 @@
                                             <constraint firstAttribute="trailing" secondItem="BKI-0q-Jbe" secondAttribute="trailing" constant="30" id="rz7-db-kik"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOX-Lp-AXd">
-                                        <rect key="frame" x="0.0" y="122" width="240" height="128"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOX-Lp-AXd" userLabel="galleryLogoView">
+                                        <rect key="frame" x="0.0" y="120" width="600" height="120"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hDS-F4-FpD" userLabel="galleryLogoImage">
+                                                <rect key="frame" x="30" y="10" width="470" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="r63-PV-9e7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="galleryName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ar7-4g-s4b">
+                                                <rect key="frame" x="30" y="60" width="470" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="RsT-3S-A5a"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Ar7-4g-s4b" firstAttribute="leading" secondItem="hOX-Lp-AXd" secondAttribute="leading" constant="30" id="BE6-qn-lm7"/>
+                                            <constraint firstItem="hDS-F4-FpD" firstAttribute="leading" secondItem="hOX-Lp-AXd" secondAttribute="leading" constant="30" id="HYf-1D-830"/>
+                                            <constraint firstItem="hDS-F4-FpD" firstAttribute="top" secondItem="hOX-Lp-AXd" secondAttribute="top" constant="10" id="LC8-N2-ISi"/>
+                                            <constraint firstItem="Ar7-4g-s4b" firstAttribute="top" secondItem="hDS-F4-FpD" secondAttribute="bottom" constant="10" id="QBr-X5-7XK"/>
+                                            <constraint firstAttribute="trailing" secondItem="hDS-F4-FpD" secondAttribute="trailing" constant="100" id="aYO-Ai-Dtd"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ar7-4g-s4b" secondAttribute="trailing" constant="100" id="dcU-ZM-wQh"/>
+                                            <constraint firstAttribute="height" constant="120" id="i9W-sP-eXJ"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="hOX-Lp-AXd" firstAttribute="top" secondItem="RcU-oD-4La" secondAttribute="bottom" id="8BF-AV-nHu"/>
+                                    <constraint firstItem="hOX-Lp-AXd" firstAttribute="centerX" secondItem="dXJ-0Z-5Rz" secondAttribute="centerX" id="DeZ-5w-vyD"/>
                                     <constraint firstItem="RcU-oD-4La" firstAttribute="centerX" secondItem="dXJ-0Z-5Rz" secondAttribute="centerX" id="FCG-Wa-Drk"/>
-                                    <constraint firstAttribute="trailing" secondItem="RcU-oD-4La" secondAttribute="trailing" constant="360" id="Pj2-zy-RXU"/>
+                                    <constraint firstItem="RcU-oD-4La" firstAttribute="bottom" secondItem="hOX-Lp-AXd" secondAttribute="top" id="Pt2-Q7-qdI"/>
                                     <constraint firstItem="RcU-oD-4La" firstAttribute="leading" secondItem="dXJ-0Z-5Rz" secondAttribute="leading" id="Y30-Fm-cxf"/>
+                                    <constraint firstAttribute="bottom" secondItem="hOX-Lp-AXd" secondAttribute="bottom" constant="15" id="ZV0-SA-hVg"/>
                                     <constraint firstItem="RcU-oD-4La" firstAttribute="top" secondItem="dXJ-0Z-5Rz" secondAttribute="top" id="jbR-zn-4dF"/>
-                                    <constraint firstAttribute="bottom" secondItem="RcU-oD-4La" secondAttribute="bottom" constant="10" id="mE1-n8-9EY"/>
+                                    <constraint firstItem="hOX-Lp-AXd" firstAttribute="leading" secondItem="dXJ-0Z-5Rz" secondAttribute="leading" id="rjc-iw-Aor"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -222,6 +251,8 @@
                     </view>
                     <connections>
                         <outlet property="datesExhibitionLbl" destination="pRh-kN-yhf" id="Loj-10-7Cb"/>
+                        <outlet property="galleryLogoImage" destination="hDS-F4-FpD" id="OXD-xk-E6v"/>
+                        <outlet property="galleryNameLbl" destination="Ar7-4g-s4b" id="znv-IE-mVb"/>
                         <outlet property="nameAuthorLbl" destination="0Km-21-zU0" id="HQK-qL-sSt"/>
                         <outlet property="nameExhibitionLbl" destination="BKI-0q-Jbe" id="jFA-XC-agk"/>
                     </connections>

@@ -1,4 +1,50 @@
 [
+ {
+ "_id": "5BR8X0Tjm8",
+ "_p_gallery": "Gallery$1af6iHUony",
+ "links": "<a href=\"http://www.nogagallery.com/exhibition/now-are-the-woods-all-black-but-still-the-sky-is-blue/\">Link 1</a><br><a href=\"http://www.nogagallery.com/exhibition/now-are-the-woods-all-black-but-still-the-sky-is-blue/\">Link 2</a>",
+ "name": "chanan de lange / “now are the woods all black, but still the sky is blue”",
+ "authorName": "chanan de lange",
+ "_created_at": "2016-01-06T18:32:30.654Z",
+ "about": "Noga Gallery is delighted to present sculptures and paintings by Chanan de Lange created in 2013-2015.\r\n \r\nThe exhibition’s title alludes to an in-between state, the elusive moment between darkness and light, when the sky is still blue but the landscape is getting darker, like the in-between that exists in de Lange’s artworks throughout his artistic career. Since his graduation and throughout his work as a designer, planner, architect, de Lange engages in a profound dialogue with visual art.\r\n \r\nMarcel Duchamp created a distinction between the “ready-made” and “objet trouvé” (found object), which the artist discovers and chooses due to its singular qualities. The ready-made is usually one object of many, produced in mass assembly line, a nondescript object. Andre Breton defined the ready-made as “an industrial object elevated to the dignity of a work of art by the mere choice of an artist”.\r\n \r\nChanan de Lange’s studio houses hundreds or thousands of ready-made parts alongside items collected over the years with love and care, objects with past and history, with cultural values of their own and very specific associations to the life of de Lange, which serve as a reservoir of memories, or as the painter’s palette.\r\n \r\nChanan de Lange is a Dadaist artist, the spirit and freedom of Dada artist is blowing between his works, characterized by a playful and tongue in cheek tone. Marcel Duchamp had said: “I enjoy looking at the bicycle wheel, it has a pleasing and comforting aspect”. De Lange’s pleasure in the creation process, the freedom with which he operates, breathes life, forms relationships, re-creates, creates two and three dimensional works, full of humor, movement, and imagination. The connection between the different elements forms a new syntax that imbues them with fresh, personal and universal meanings.\r\n \r\nThe exhibition also includes works on canvas originating in curtains, in some of the canvases there is a use of light. The works on canvas, like the sculptures, stress the engagement with liminal moments, and correspond in a different manner with that hinted in-between.\r\n \r\nProfessor Chanan de Lange graduated with honors from Bezalel Department of Industrial Design. He has been an active designer since 1985 and a teacher at Bezalel since 1988. He served in the past as head of Bezalel Industrial Design Bachelor’s Degree program and (1992-1995) and Bezalel Industrial Design Master’s Degree program (2006-2007). An associate professor since 2003 and a professor since 2008.",
+ "authorDescription": "De Lange has had two solo exhibitions at Tel Aviv Museum of Art (2012 and 1994), as well as a solo exhibition at Novalis Gallery in Turin, and Haifa Museum, and his works were featured in many group exhibitions at Tel Aviv Museum of Art, The Israel Museum, Jerusalem, The Tel Aviv University Gallery, The Artists’ Studios, Holon Design Museum and more.",
+ "dateEnd": "2016-02-15T00:00:00Z",
+ "dateStart": "2016-01-12T00:00:00Z",
+ "_updated_at": "2016-02-24T14:58:29.366Z",
+ "works": [
+           {
+           "__type": "Pointer",
+           "className": "WorkPicture",
+           "objectId": "dL3b4hnESG"
+           },
+           {
+           "__type": "Pointer",
+           "className": "WorkPicture",
+           "objectId": "Ke3VIw9qqz"
+           },
+           {
+           "__type": "Pointer",
+           "className": "WorkPicture",
+           "objectId": "d6eblxgUqA"
+           },
+           {
+           "__type": "Pointer",
+           "className": "WorkPicture",
+           "objectId": "XiuwH85SBm"
+           },
+           {
+           "__type": "Pointer",
+           "className": "WorkPicture",
+           "objectId": "bUHzxIwGbu"
+           },
+           {
+           "__type": "Pointer",
+           "className": "WorkPicture",
+           "objectId": "PP3t5k3VKk"
+           }
+           ],
+ "likesCount": 1
+ },
   {
     "_id": "0M9YWBgV3h",
     "authorName": "Iddo Markus",
@@ -294,52 +340,6 @@
         "__type": "Pointer",
         "className": "WorkPicture",
         "objectId": "9CD7i2r2Pa"
-      }
-    ],
-    "likesCount": 1
-  },
-  {
-    "_id": "5BR8X0Tjm8",
-    "_p_gallery": "Gallery$1af6iHUony",
-    "links": "<a href=\"http://www.nogagallery.com/exhibition/now-are-the-woods-all-black-but-still-the-sky-is-blue/\">Link 1</a><br><a href=\"http://www.nogagallery.com/exhibition/now-are-the-woods-all-black-but-still-the-sky-is-blue/\">Link 2</a>",
-    "name": "chanan de lange / “now are the woods all black, but still the sky is blue”",
-    "authorName": "chanan de lange",
-    "_created_at": "2016-01-06T18:32:30.654Z",
-    "about": "Noga Gallery is delighted to present sculptures and paintings by Chanan de Lange created in 2013-2015.\r\n \r\nThe exhibition’s title alludes to an in-between state, the elusive moment between darkness and light, when the sky is still blue but the landscape is getting darker, like the in-between that exists in de Lange’s artworks throughout his artistic career. Since his graduation and throughout his work as a designer, planner, architect, de Lange engages in a profound dialogue with visual art.\r\n \r\nMarcel Duchamp created a distinction between the “ready-made” and “objet trouvé” (found object), which the artist discovers and chooses due to its singular qualities. The ready-made is usually one object of many, produced in mass assembly line, a nondescript object. Andre Breton defined the ready-made as “an industrial object elevated to the dignity of a work of art by the mere choice of an artist”.\r\n \r\nChanan de Lange’s studio houses hundreds or thousands of ready-made parts alongside items collected over the years with love and care, objects with past and history, with cultural values of their own and very specific associations to the life of de Lange, which serve as a reservoir of memories, or as the painter’s palette.\r\n \r\nChanan de Lange is a Dadaist artist, the spirit and freedom of Dada artist is blowing between his works, characterized by a playful and tongue in cheek tone. Marcel Duchamp had said: “I enjoy looking at the bicycle wheel, it has a pleasing and comforting aspect”. De Lange’s pleasure in the creation process, the freedom with which he operates, breathes life, forms relationships, re-creates, creates two and three dimensional works, full of humor, movement, and imagination. The connection between the different elements forms a new syntax that imbues them with fresh, personal and universal meanings.\r\n \r\nThe exhibition also includes works on canvas originating in curtains, in some of the canvases there is a use of light. The works on canvas, like the sculptures, stress the engagement with liminal moments, and correspond in a different manner with that hinted in-between.\r\n \r\nProfessor Chanan de Lange graduated with honors from Bezalel Department of Industrial Design. He has been an active designer since 1985 and a teacher at Bezalel since 1988. He served in the past as head of Bezalel Industrial Design Bachelor’s Degree program and (1992-1995) and Bezalel Industrial Design Master’s Degree program (2006-2007). An associate professor since 2003 and a professor since 2008.",
-    "authorDescription": "De Lange has had two solo exhibitions at Tel Aviv Museum of Art (2012 and 1994), as well as a solo exhibition at Novalis Gallery in Turin, and Haifa Museum, and his works were featured in many group exhibitions at Tel Aviv Museum of Art, The Israel Museum, Jerusalem, The Tel Aviv University Gallery, The Artists’ Studios, Holon Design Museum and more.",
-    "dateEnd": "2016-02-15T00:00:00Z",
-    "dateStart": "2016-01-12T00:00:00Z",
-    "_updated_at": "2016-02-24T14:58:29.366Z",
-    "works": [
-      {
-        "__type": "Pointer",
-        "className": "WorkPicture",
-        "objectId": "dL3b4hnESG"
-      },
-      {
-        "__type": "Pointer",
-        "className": "WorkPicture",
-        "objectId": "Ke3VIw9qqz"
-      },
-      {
-        "__type": "Pointer",
-        "className": "WorkPicture",
-        "objectId": "d6eblxgUqA"
-      },
-      {
-        "__type": "Pointer",
-        "className": "WorkPicture",
-        "objectId": "XiuwH85SBm"
-      },
-      {
-        "__type": "Pointer",
-        "className": "WorkPicture",
-        "objectId": "bUHzxIwGbu"
-      },
-      {
-        "__type": "Pointer",
-        "className": "WorkPicture",
-        "objectId": "PP3t5k3VKk"
       }
     ],
     "likesCount": 1

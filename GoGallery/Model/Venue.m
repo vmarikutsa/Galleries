@@ -27,13 +27,11 @@
         self.address = data[@"address"];
         
         if ([Common isValidStringForURL:data[@"galleryLogo"]]) {
-            self.logo = [Common makeURLWithString: data[@"galleryLogo"]];
+            self.logo = [Common makeFileURLWithString: data[@"galleryLogo"]];
         }
         if ([Common isValidStringForURL:data[@"link"]]) {
-            self.logo = [Common makeURLWithString:data[@"link"]];
+            self.link = [Common makeURLWithString:data[@"link"]];
         }
-        //self.link = [[NSURL alloc] initWithString:data[@"link"]];
-        //data[@"email"];
         self.phone = data[@"phone"];
         self.location = [[CLLocation alloc] initWithLatitude:[data[@"latitude"] floatValue] longitude:[data[@"longitude"] floatValue]];
     }
