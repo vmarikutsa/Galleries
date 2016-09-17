@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *datesExhibitionLbl;
 @property (weak, nonatomic) IBOutlet UIImageView *galleryLogoImage;
 @property (weak, nonatomic) IBOutlet UILabel *galleryNameLbl;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *galleryLogoImageWidth;
 
 @end

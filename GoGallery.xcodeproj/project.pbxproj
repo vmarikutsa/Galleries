@@ -552,7 +552,6 @@
 		411ED7831D675907008D844E /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 411ED7821D675907008D844E /* Venue.m */; };
 		4168DD551D8ADE33002F2A88 /* EventInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4168DD541D8ADE33002F2A88 /* EventInformationViewController.m */; };
 		4168DD5C1D8C2D9E002F2A88 /* NSDate+NSDate_DateConvertor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4168DD5B1D8C2D9E002F2A88 /* NSDate+NSDate_DateConvertor.m */; };
-		41D227A71D86993C002820E2 /* test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D227A61D86993C002820E2 /* test1.m */; };
 		631111B01D7C2C660049AAD5 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 631111AF1D7C2C660049AAD5 /* Work.m */; };
 		631111B31D7C413A0049AAD5 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 631111B21D7C413A0049AAD5 /* Common.m */; };
 		6EC549541D807C9300116AE6 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC549531D807C9300116AE6 /* MyViewController.m */; };
@@ -1118,8 +1117,6 @@
 		4168DD541D8ADE33002F2A88 /* EventInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInformationViewController.m; sourceTree = "<group>"; };
 		4168DD5A1D8C2D9E002F2A88 /* NSDate+NSDate_DateConvertor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NSDate_DateConvertor.h"; sourceTree = "<group>"; };
 		4168DD5B1D8C2D9E002F2A88 /* NSDate+NSDate_DateConvertor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NSDate_DateConvertor.m"; sourceTree = "<group>"; };
-		41D227A51D86993C002820E2 /* test1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test1.h; sourceTree = "<group>"; };
-		41D227A61D86993C002820E2 /* test1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test1.m; sourceTree = "<group>"; };
 		631111AE1D7C2C660049AAD5 /* Work.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Work.h; sourceTree = "<group>"; };
 		631111AF1D7C2C660049AAD5 /* Work.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Work.m; sourceTree = "<group>"; };
 		631111B11D7C413A0049AAD5 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
@@ -1213,8 +1210,6 @@
 				411ED3501D675819008D844E /* data */,
 				411ED3541D675819008D844E /* images */,
 				411ED5471D67581A008D844E /* logos */,
-				41D227A51D86993C002820E2 /* test1.h */,
-				41D227A61D86993C002820E2 /* test1.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -2423,7 +2418,6 @@
 				411ED7831D675907008D844E /* Venue.m in Sources */,
 				4168DD5C1D8C2D9E002F2A88 /* NSDate+NSDate_DateConvertor.m in Sources */,
 				411ED33C1D6757E7008D844E /* AppDelegate.m in Sources */,
-				41D227A71D86993C002820E2 /* test1.m in Sources */,
 				411ED7791D67584A008D844E /* EventsModel.m in Sources */,
 				411ED3391D6757E7008D844E /* main.m in Sources */,
 				411ED77D1D675890008D844E /* DataLoader.m in Sources */,
