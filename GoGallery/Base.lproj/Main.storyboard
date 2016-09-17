@@ -154,23 +154,23 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXJ-0Z-5Rz">
                                 <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RcU-oD-4La" userLabel="authorView">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="116"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcU-oD-4La" userLabel="authorView">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="127"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="nameExhibition" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKI-0q-Jbe">
-                                                <rect key="frame" x="30" y="10" width="540" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameExhibition" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKI-0q-Jbe">
+                                                <rect key="frame" x="30" y="10" width="540" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="nameAuthor" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Km-21-zU0">
-                                                <rect key="frame" x="30" y="48" width="540" height="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameAuthor" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Km-21-zU0">
+                                                <rect key="frame" x="30" y="54" width="540" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="dateExhibition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRh-kN-yhf">
-                                                <rect key="frame" x="30" y="81" width="540" height="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dateExhibition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRh-kN-yhf">
+                                                <rect key="frame" x="30" y="92" width="540" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="neG-lu-alI"/>
                                                 </constraints>
@@ -194,7 +194,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOX-Lp-AXd" userLabel="galleryLogoView">
-                                        <rect key="frame" x="0.0" y="116" width="600" height="100"/>
+                                        <rect key="frame" x="0.0" y="127" width="600" height="95"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hDS-F4-FpD" userLabel="galleryLogoImage">
                                                 <rect key="frame" x="30" y="5" width="470" height="40"/>
@@ -203,11 +203,8 @@
                                                     <constraint firstAttribute="height" constant="40" id="r63-PV-9e7"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="galleryName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ar7-4g-s4b">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="galleryName" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ar7-4g-s4b">
                                                 <rect key="frame" x="30" y="50" width="470" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="RsT-3S-A5a"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -216,17 +213,13 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="Ar7-4g-s4b" firstAttribute="leading" secondItem="hOX-Lp-AXd" secondAttribute="leading" constant="30" id="BE6-qn-lm7"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ar7-4g-s4b" secondAttribute="bottom" constant="5" id="DKY-o7-hAK"/>
                                             <constraint firstItem="hDS-F4-FpD" firstAttribute="leading" secondItem="hOX-Lp-AXd" secondAttribute="leading" constant="30" id="HYf-1D-830"/>
                                             <constraint firstItem="hDS-F4-FpD" firstAttribute="top" secondItem="hOX-Lp-AXd" secondAttribute="top" constant="5" id="LC8-N2-ISi"/>
                                             <constraint firstItem="Ar7-4g-s4b" firstAttribute="top" secondItem="hDS-F4-FpD" secondAttribute="bottom" constant="5" id="QBr-X5-7XK"/>
                                             <constraint firstAttribute="trailing" secondItem="hDS-F4-FpD" secondAttribute="trailing" constant="100" id="aYO-Ai-Dtd"/>
                                             <constraint firstAttribute="trailing" secondItem="Ar7-4g-s4b" secondAttribute="trailing" constant="100" id="dcU-ZM-wQh"/>
-                                            <constraint firstAttribute="height" constant="100" id="i9W-sP-eXJ"/>
                                         </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XAk-wo-nZB">
-                                        <rect key="frame" x="-60" y="-11" width="17" height="59"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                                 <constraints>
