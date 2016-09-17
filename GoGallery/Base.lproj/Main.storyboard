@@ -148,11 +148,11 @@
                         <viewControllerLayoutGuide type="bottom" id="ZvU-S0-9hR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rSx-d0-f2R">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXJ-0Z-5Rz">
-                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="492"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcU-oD-4La" userLabel="authorView">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="127"/>
@@ -193,8 +193,8 @@
                                             <constraint firstAttribute="trailing" secondItem="BKI-0q-Jbe" secondAttribute="trailing" constant="30" id="rz7-db-kik"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOX-Lp-AXd" userLabel="galleryLogoView">
-                                        <rect key="frame" x="0.0" y="127" width="600" height="95"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOX-Lp-AXd" userLabel="galleryLogoView">
+                                        <rect key="frame" x="0.0" y="127" width="600" height="91"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hDS-F4-FpD" userLabel="galleryLogoImage">
                                                 <rect key="frame" x="30" y="5" width="470" height="40"/>
@@ -203,8 +203,8 @@
                                                     <constraint firstAttribute="height" constant="40" id="r63-PV-9e7"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="galleryName" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ar7-4g-s4b">
-                                                <rect key="frame" x="30" y="50" width="470" height="40"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="galleryName" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ar7-4g-s4b">
+                                                <rect key="frame" x="30" y="50" width="470" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -228,6 +228,7 @@
                                     <constraint firstItem="RcU-oD-4La" firstAttribute="centerX" secondItem="dXJ-0Z-5Rz" secondAttribute="centerX" id="FCG-Wa-Drk"/>
                                     <constraint firstItem="RcU-oD-4La" firstAttribute="bottom" secondItem="hOX-Lp-AXd" secondAttribute="top" id="Pt2-Q7-qdI"/>
                                     <constraint firstItem="RcU-oD-4La" firstAttribute="leading" secondItem="dXJ-0Z-5Rz" secondAttribute="leading" id="Y30-Fm-cxf"/>
+                                    <constraint firstItem="RcU-oD-4La" firstAttribute="top" secondItem="dXJ-0Z-5Rz" secondAttribute="top" id="Yax-jZ-iMw"/>
                                     <constraint firstAttribute="bottom" secondItem="hOX-Lp-AXd" secondAttribute="bottom" constant="15" id="ZV0-SA-hVg"/>
                                     <constraint firstItem="RcU-oD-4La" firstAttribute="top" secondItem="dXJ-0Z-5Rz" secondAttribute="top" id="jbR-zn-4dF"/>
                                     <constraint firstItem="hOX-Lp-AXd" firstAttribute="leading" secondItem="dXJ-0Z-5Rz" secondAttribute="leading" id="rjc-iw-Aor"/>
@@ -242,6 +243,7 @@
                             <constraint firstItem="ZvU-S0-9hR" firstAttribute="top" secondItem="dXJ-0Z-5Rz" secondAttribute="bottom" id="r5q-38-upF"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="datesExhibitionLbl" destination="pRh-kN-yhf" id="Loj-10-7Cb"/>
                         <outlet property="galleryLogoImage" destination="hDS-F4-FpD" id="OXD-xk-E6v"/>
