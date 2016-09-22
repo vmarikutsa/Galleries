@@ -36,6 +36,20 @@
     [self.galleryLogoImage setImage:logoImage];
     
     self.galleryNameLbl.text = self.currentExhibition.venue.name;
+    
+    NSLog(@"Schedule count: %lu", (unsigned long)self.currentExhibition.venue.schedule.count);
+    
+    if (self.currentExhibition.venue.schedule.count > 0) {
+        self.workingDaysLbl.text = self.currentExhibition.venue.schedule.firstObject;
+        if (self.currentExhibition.venue.schedule.count > 1) {
+            self.weekendDaysLbl.text = self.currentExhibition.venue.schedule.lastObject;
+        } else {
+            self.weekendDaysLbl.text = @"-";
+        }
+    } else{
+        self.workingDaysLbl.text = @"-";
+        self.weekendDaysLbl.text = @"-";
+    }
 }
 
 - (void)didReceiveMemoryWarning {
