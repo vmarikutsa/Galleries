@@ -14,7 +14,8 @@
 @interface EventInformationViewController ()
 @property (strong) Exhibition *currentExhibition;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contactsViewHeightConstr;
-@property (nonatomic) int _ConstContactsViewHeightConstr;
+@property (assign, nonatomic) int _ConstContactsViewHeightConstr;
+@property (assign, nonatomic) BOOL isExpanded;
 @end
 
 @implementation EventInformationViewController
@@ -61,6 +62,7 @@
     self.galleryAboutLbl.text = self.currentExhibition.venue.about;
     
     __ConstContactsViewHeightConstr = self.contactsViewHeightConstr.constant;
+    self.isExpanded = YES;
     
 }
 
@@ -70,7 +72,18 @@
 }
 
 - (IBAction)collapsContacts:(UIButton *)sender {
-    self.contactsViewHeightConstr.constant = self.contactsViewHeightConstr.constant == 0 ? __ConstContactsViewHeightConstr : 0;
+    
+    self.contactsViewHeightConstr.constant = self.isExpanded ? 0 : __ConstContactsViewHeightConstr;
+    
+    __weak typeof(self) weakself = self;
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        [weakself.view layoutIfNeeded];
+        weakself.contactsView.alpha = weakself.isExpanded ? 0.0 : 1.0;
+    }];
+    
+    
+    self.isExpanded = !self.isExpanded;
 }
 
 /*

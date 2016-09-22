@@ -208,13 +208,18 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVx-zi-rFV">
-                                                <rect key="frame" x="540" y="31" width="30" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVx-zi-rFV">
+                                                <rect key="frame" x="549" y="35" width="13" height="22"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="m4r-2d-9ix"/>
                                                     <constraint firstAttribute="width" constant="30" id="sKk-Zt-JyD"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" image="arrow_black"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layout.Radius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="collapsContacts:" destination="Lkw-xD-miW" eventType="touchUpInside" id="LSr-1e-ojr"/>
                                                 </connections>
@@ -472,6 +477,7 @@
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
                         <outlet property="collapsContactsBtn" destination="hVx-zi-rFV" id="p37-SV-Tfc"/>
+                        <outlet property="contactsView" destination="IkO-km-eJS" id="bIR-A2-idh"/>
                         <outlet property="contactsViewHeightConstr" destination="yF8-6m-tNS" id="wHH-aV-cnx"/>
                         <outlet property="datesExhibitionLbl" destination="pRh-kN-yhf" id="Loj-10-7Cb"/>
                         <outlet property="facebookLbl" destination="SM3-dB-mGJ" id="pQZ-Ey-dwV"/>
@@ -510,6 +516,7 @@
     </scenes>
     <resources>
         <image name="Clock.png" width="30" height="29"/>
+        <image name="arrow_black" width="13" height="7"/>
         <image name="facebook" width="30" height="29"/>
         <image name="link" width="30" height="29"/>
         <image name="maps_pin" width="30" height="29"/>

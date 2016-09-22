@@ -25,5 +25,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *linkLbl;
 @property (weak, nonatomic) IBOutlet UILabel *facebookLbl;
 @property (weak, nonatomic) IBOutlet UILabel *galleryAboutLbl;
+@property (weak, nonatomic) IBOutlet UIView *contactsView;
 
 @end
