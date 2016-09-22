@@ -13,6 +13,8 @@
 
 @interface EventInformationViewController ()
 @property (strong) Exhibition *currentExhibition;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contactsViewHeightConstr;
+@property (nonatomic) int _ConstContactsViewHeightConstr;
 @end
 
 @implementation EventInformationViewController
@@ -50,11 +52,25 @@
         self.workingDaysLbl.text = @"-";
         self.weekendDaysLbl.text = @"-";
     }
+    
+    self.locationLbl.text = self.currentExhibition.venue.address;
+    self.phoneLbl.text = self.currentExhibition.venue.phone;
+    self.linkLbl.text = self.currentExhibition.venue.link.absoluteString;
+    self.facebookLbl.text = self.currentExhibition.venue.facebook;
+    
+    self.galleryAboutLbl.text = self.currentExhibition.venue.about;
+    
+    __ConstContactsViewHeightConstr = self.contactsViewHeightConstr.constant;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)collapsContacts:(UIButton *)sender {
+    self.contactsViewHeightConstr.constant = self.contactsViewHeightConstr.constant == 0 ? __ConstContactsViewHeightConstr : 0;
 }
 
 /*

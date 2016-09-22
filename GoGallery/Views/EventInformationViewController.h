@@ -19,5 +19,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *galleryNameLbl;
 @property (weak, nonatomic) IBOutlet UILabel *workingDaysLbl;
 @property (weak, nonatomic) IBOutlet UILabel *weekendDaysLbl;
+@property (weak, nonatomic) IBOutlet UIButton *collapsContactsBtn;
+@property (weak, nonatomic) IBOutlet UILabel *locationLbl;
+@property (weak, nonatomic) IBOutlet UILabel *phoneLbl;
+@property (weak, nonatomic) IBOutlet UILabel *linkLbl;
+@property (weak, nonatomic) IBOutlet UILabel *facebookLbl;
+@property (weak, nonatomic) IBOutlet UILabel *galleryAboutLbl;
 
 @end
