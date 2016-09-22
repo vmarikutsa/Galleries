@@ -80,8 +80,10 @@
     [UIView animateWithDuration:0.4 animations:^{
         [weakself.view layoutIfNeeded];
         weakself.contactsView.alpha = weakself.isExpanded ? 0.0 : 1.0;
+        weakself.collapsContactsBtn.imageView.transform = CGAffineTransformRotate(weakself.collapsContactsBtn.imageView.transform, weakself.isExpanded ? -3.14 : 3.14);
     }];
     
+    //CGAF
     
     self.isExpanded = !self.isExpanded;
 }
